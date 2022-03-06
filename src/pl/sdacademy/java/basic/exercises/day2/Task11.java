@@ -10,6 +10,21 @@ public class Task11 {
         System.out.println("Result: " + isPalindrom(text));
         text = "essa";
         System.out.println("Result: " + isPalindrom(text));
+        System.out.println();
+
+        text = "kajak";
+        System.out.println("Result: " + isPalindromeWithStringBuilder(text));
+        text = "sedes";
+        System.out.println("Result: " + isPalindromeWithStringBuilder(text));
+        text = "sda";
+        System.out.println("Result: " + isPalindromeWithStringBuilder(text));
+        text = "essa";
+        System.out.println("Result: " + isPalindromeWithStringBuilder(text));
+
+    }
+    public static boolean isPalindromeWithStringBuilder(String input){
+        StringBuilder inputAfterReverse = new StringBuilder(input).reverse();
+        return input.equals(inputAfterReverse.toString());
     }
 
     public static boolean isPalindrom(String input){
