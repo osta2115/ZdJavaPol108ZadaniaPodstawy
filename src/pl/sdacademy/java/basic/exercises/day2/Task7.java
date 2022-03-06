@@ -10,14 +10,15 @@ public class Task7 {
     private static double getPercent(String input){
         double percent = 0;
         if (StringHelper.isValid(input) && input.contains(String.valueOf(SPACE_SIGN))){
-            double counter = 0;
-            for (int i = 0; i < input.length(); i++) {
-                if (input.charAt(i) == SPACE_SIGN){
-                    counter++;
+            //if (input != null && input.contains(String.valueOf(SPACE_SIGN))){ //gdy same spacje musza dac wynik
+                double counter = 0;
+                for (int i = 0; i < input.length(); i++) {
+                    if (input.charAt(i) == SPACE_SIGN){
+                        counter++;
+                    }
                 }
+                percent = (counter / input.length()) * 100;
             }
-            percent = (counter / input.length()) * 100;
-        }
         return percent;
     }
 }
