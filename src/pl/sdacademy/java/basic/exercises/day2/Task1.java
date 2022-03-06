@@ -1,3 +1,5 @@
+package pl.sdacademy.java.basic.exercises.day2;
+
 public class Task1 {
     private static final char DEFAULT_CHAR = '\u0000';
     public static void main(String[] args) {

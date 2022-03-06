@@ -1,3 +1,5 @@
+package pl.sdacademy.java.basic.exercises.day2;
+
 public class Task4 {
     private static final String REPLACEMENT = "-STOP-";
     private static final String REGEX = "[.,]";

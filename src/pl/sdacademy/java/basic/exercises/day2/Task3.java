@@ -1,3 +1,5 @@
+package pl.sdacademy.java.basic.exercises.day2;
+
 public class Task3 {
     public static void main(String[] args) {
         String input = "Ala ma kota";
