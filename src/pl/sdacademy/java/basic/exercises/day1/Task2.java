@@ -7,7 +7,7 @@ public class Task2 {
 
     public static void main(String[] args) {
         float radius = getDiameterFromUser() / 2;
-        double circumference = calcualteCircumferenceOfADiameter(radius);
+        double circumference = calculateCircumferenceOfADiameter(radius);
         double area = calculateAreaOfACircle(radius);
 
         System.out.println("Radius: " + radius);
@@ -20,7 +20,7 @@ public class Task2 {
         return scanner.nextFloat();
     }
 
-    public static double calcualteCircumferenceOfADiameter(float radius){
+    public static double calculateCircumferenceOfADiameter(float radius){
         // return 2 * PI * radius;
         return 2 * Math.PI * radius;
     }
