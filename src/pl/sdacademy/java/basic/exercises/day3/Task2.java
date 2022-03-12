@@ -18,13 +18,13 @@ public class Task2 {
     public static boolean isIbanCorrect(String iban){
         /*
         true:
-        PL(26cyfr)
+        PL10105000997603123456789123
 
         false:
-        pl26cyfr
-        PL26+
-        PL26-
-        26cyfr
+        pl10105000997603123456789123
+        PL101050009976031234567891232
+        PL1010500099760312345678912
+        10105000997603123456789123
          */
         Pattern pattern = Pattern.compile(IBAN_REGEX);
         return pattern.matcher(iban).matches();
